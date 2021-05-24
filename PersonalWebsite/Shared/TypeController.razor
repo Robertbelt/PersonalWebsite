@@ -1,0 +1,67 @@
+﻿<body>
+
+<h1>Hello, world!</h1>
+<p>Roberto Beltran: @DisplayStr</p>
+<SurveyPrompt Title="How is Blazor working for you?" />
+</body>
+
+
+@code
+{
+    [Parameter]
+    public List<string> WordList { get; set; } = new List<string>() {"Developer", ".NET"," Blazor"};
+
+    [Parameter]
+    public int TypeSpeed { get; set; } = 250;
+
+    [Parameter]
+    public int DeleteSpeed { get; set; } = 125;
+
+    [Parameter]
+    public int InBetweenSpeed { get; set; } = 300;
+
+    public string DisplayStr = "";
+
+    protected override void OnInitialized()
+    {
+        TypeManager();
+
+    }
+
+
+    private async Task TypeManager()
+    {
+        foreach (var charArray in WordList.Select(word => word.ToCharArray()))
+        {
+            await TypeWord(charArray);
+            await Task.Delay(InBetweenSpeed);
+            await DeleteWord(DisplayStr.Length);
+        }
+        await TypeManager();
+    }
+
+    protected async Task TypeWord(char[] charArray)
+    {
+
+        foreach (var letter in charArray)
+        {
+            DisplayStr += letter;
+            StateHasChanged();
+            await Task.Delay(TypeSpeed);
+        }
+    }
+
+    protected async Task DeleteWord(int wordLength)
+    {
+        for (var i = 0; i < wordLength; i++)
+        {
+            DisplayStr = DisplayStr.Remove(DisplayStr.Length - 1, 1);
+            StateHasChanged();
+            await Task.Delay(DeleteSpeed);
+        }
+    }
+
+
+
+
+}
