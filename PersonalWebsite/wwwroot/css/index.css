@@ -1,13 +1,14 @@
-﻿
-@font-face {
+﻿@font-face {
     font-family: 'ShareTechMono-Regular';
-    src: url('file:///C:\Users\rober\source\repos\PersonalWebsite\PersonalWebsite\wwwroot\css\Fonts\ShareTechMono-Regular.ttf') format('truetype');
+    src: url('css\Fonts\ShareTechMono-Regular.tff') format('truetype');
 }
 
-
-html, body {
-    margin: 0;
+@font-face {
+    font-family: 'Calibre-SemiBold';
+    src: url('css\Fonts\Calibre-SemiBold.ttf') format('truetype');
 }
+
+html, body { margin: 0; }
 
 div {
     background-color: #011C26;
@@ -16,60 +17,58 @@ div {
 }
 
 .outerDiv {
-    width: 80vw;
     height: 100%;
     margin: 0 auto;
+    width: 80vw;
 }
 
 
 .flexbox-container {
-    display: flex;
-    margin: 50px 0px 50px 0px;
-    height: 600px;
-    flex-direction: row;
-    justify-content:left;
     background-color: aqua;
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    justify-content: left;
+    margin: 50px 0px 50px 0px;
     width: 100%;
 }
 
 .flexbox-item {
-    width: 200px;
     background-color: red;
     margin: 0 10px 0 10px;
+    width: 200px;
 }
 
 .flexbox-item1 {
-    width: 30%;
-    height: 70%;
-    margin: 0 10px 0 0;
-    justify-content: left;
     align-self: flex-end;
+    height: 70%;
+    justify-content: left;
+    margin: 0 10px 0 0;
+    width: 30%;
 }
 
-
-.flexbox-item1 .text1 {
-        color: white;
+h3 {
+    color: cadetblue;
+    font-family: 'Calibre-SemiBold', sans-serif;
+    font-size: 1.3em;
+    font-size: 15.6px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: normal;
+    margin: 1em 0em 0em 1em;
+    vertical-align: baseline;
+    word-spacing: 0px;
 }
 
-
-.flexbox-item1 .text2 {
-    color: white;
-    font-family: 'ShareTechMono-Regular';
-}
-
-
-.flexbox-item2 {
-    width: 40%;
-}
+.flexbox-item2 { width: 40%; }
 
 .flexbox-item3 {
     justify-content: right;
-    width: 30%;
-    margin: 0  0 0 10px;
-    
+    margin: 0 0 0 10px;
+    width: 30%;    
 }
 
 .container2 {
-    height: 600px;
     display: flex;
+    height: 600px;
 }
