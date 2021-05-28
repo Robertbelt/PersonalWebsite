@@ -48,9 +48,8 @@ div {
 }
 
 h3 {
-    color: cadetblue;
+    color: white;
     font-family: 'Calibre-SemiBold', sans-serif;
-    font-size: 1.3em;
     font-size: 15.6px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -58,7 +57,31 @@ h3 {
     margin: 1em 0em 0em 1em;
     vertical-align: baseline;
     word-spacing: 0px;
+    flex: none;
 }
+
+.name-span {
+    display: flex;
+    margin: 0 0 0 .10em;
+    justify-content: left;
+    background-color: black;
+    font-size: 5em;
+    line-height: normal;
+    vertical-align: baseline;
+    letter-spacing: normal;
+    word-spacing: 0px;
+    text-align: start;
+    font-weight: bold;
+
+}
+
+@media screen and (max-width: 600px) {
+    span {
+        font-size: 3.5em;
+    }
+}
+
+
 
 .flexbox-item2 { width: 40%; }
 
