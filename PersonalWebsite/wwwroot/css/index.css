@@ -1,97 +1,49 @@
-﻿@font-face {
-    font-family: 'ShareTechMono-Regular';
-    src: url('css\Fonts\ShareTechMono-Regular.tff') format('truetype');
+﻿body {
+    background-color: black;
 }
 
-@font-face {
-    font-family: 'Calibre-SemiBold';
-    src: url('css\Fonts\Calibre-SemiBold.ttf') format('truetype');
-}
-
-html, body { margin: 0; }
-
-div {
-    background-color: #011C26;
-    height: 100%;
-    width: 100%;
-}
-
-.outerDiv {
-    height: 100%;
-    margin: 0 auto;
-    width: 80vw;
+.mainframe {
+    background-color: red;
+    height: 100vh;
+    width: 77vw;
+    
 }
 
 
-.flexbox-container {
-    background-color: aqua;
+
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    -ms-overflow-style: none;
+    
+}
+
+.outer-wrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.wrapper {
     display: flex;
     flex-direction: row;
-    height: 600px;
-    justify-content: left;
-    margin: 50px 0px 50px 0px;
-    width: 100%;
+    width: 350vw;
+    transform: rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+    
+    
 }
 
-.flexbox-item {
-    background-color: red;
-    margin: 0 10px 0 10px;
-    width: 200px;
-}
-
-.flexbox-item1 {
-    align-self: flex-end;
-    height: 70%;
-    justify-content: left;
-    margin: 0 10px 0 0;
-    width: 30%;
-}
-
-h3 {
-    color: white;
-    font-family: 'Calibre-SemiBold', sans-serif;
-    font-size: 15.6px;
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: normal;
-    margin: 1em 0em 0em 1em;
-    vertical-align: baseline;
-    word-spacing: 0px;
-    flex: none;
-}
-
-.name-span {
-    display: flex;
-    margin: 0 0 0 .10em;
-    justify-content: left;
-    background-color: black;
-    font-size: 5em;
-    line-height: normal;
-    vertical-align: baseline;
-    letter-spacing: normal;
-    word-spacing: 0px;
-    text-align: start;
-    font-weight: bold;
+.card {
+    width: 40vw;
+    height: 60vh;
+    margin: 20vh 0 0 10vw;
 
 }
 
-@media screen and (max-width: 600px) {
-    span {
-        font-size: 3.5em;
-    }
-}
-
-
-
-.flexbox-item2 { width: 40%; }
-
-.flexbox-item3 {
-    justify-content: right;
-    margin: 0 0 0 10px;
-    width: 30%;    
-}
-
-.container2 {
-    display: flex;
-    height: 600px;
+.card:first-of-type {
+    margin-left: 100vw;
 }
