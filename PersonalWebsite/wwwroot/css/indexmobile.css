@@ -1,0 +1,45 @@
+﻿.reset-this {
+    all: revert;
+    all: unset;
+}
+
+.outer-wrapper {
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+    transform: rotate(90deg) translateY(100vh);
+}
+body {
+    width: 100vw;
+    height: 100vh;
+    background: aqua;
+}
+
+.mainframe {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/*.outer-wrapper {
+    position: relative;
+    background: black;
+    border: 5px solid red;
+    width: 100vw;
+    height: 75vh;
+    margin: 0;
+    transform: rotate(90deg) translateX(100vh) scaleX(-1);
+    border-top-right-radius: 35px 20px;
+    transform-origin: bottom left;
+    overflow-y: auto;
+    overflow-x: auto;
+    flex-wrap: nowrap;
+}
+
+.wrapper {
+    width: 100vw;
+    height: 100vh;
+}*/
+
+
+
