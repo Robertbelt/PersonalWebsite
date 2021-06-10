@@ -48,10 +48,7 @@
     margin-left: 100vw;
 }
 
-/*add cards to reset-this*/
-
-
-@media(max-width: 854px) {
+@media(max-width: 767px) {
     .reset-this {
         all: revert;
     }
@@ -113,6 +110,33 @@
 
     .card:first-of-type {
         margin: 35vh 0 .5vh 0;
+    }
+
+    .card:last-of-type {
+        height: 29%;
+    }
+}
+
+@media(max-height: 824px){
+    .outer-wrapper {
+        display: flex;
+        background-color: black;
+        justify-content: center;
+    }
+
+    .wrapper {
+        margin: 0 2vw 0 2vw;
+        height: 170vh;
+        width: 90%;
+    }
+
+    .card {
+        height: 29vh;
+        margin-bottom: 1vh;
+    }
+
+    .card:first-of-type {
+        margin: 34vh 0 1vh 0;
     }
 
     .card:last-of-type {
