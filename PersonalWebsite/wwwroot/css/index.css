@@ -1,26 +1,83 @@
-﻿body {
-    background-color: black;
+﻿@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+
+
+@font-face {
+    font-family: 'Sofia Pro Regular';
+    src: url('wwwroot\css\Fonts\Sofia Pro Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Anson-Regular';
+    src: url('/wwwroot\css\Fonts\Anson-Regular.otf') format('opentype');
+}
+
+body {
+    background-color: #091B40;
 }
 
 .mainframe {
-    background-color: red;
+    background-color: #091B40;
     height: 100vh;
-    width: 77vw;
-    
+    width: 100vw;
+    border-right: 40vw solid rgba(255, 255, 255, .01);
+   -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+
+
+.NameDiv {
+    width: 10vw;
+    height: 8vh;
+    margin-left: 3vw;
+    margin: 8vh 0 0 4vw;
 }
 
 
 
+
+.name {
+    font-family: 'Inconsolata', monospace;
+    -webkit-font-smoothing: antialiased;
+    color: #F7F6F5;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    line-height: 28.6px;
+    font-size: 1.2rem;
+    word-spacing: 0;
+    padding: 0;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none solid rgb(247, 246, 245);
+    text-align: start;
+    text-indent: 0;
+}
+
+.IntroDiv {
+    position: absolute;
+    height: 40%;
+    transform: translateX(20vh) translateY(15vh);
+}
+
+.IntroDiv h2 {
+    color: #F7F6F5;
+    font-size: 5rem;
+    font-family: 'Anson-Regular';
+    font-weight: 800;
+    letter-spacing: .2rem;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+
 .outer-wrapper {
-    width: 100vh;
+ 
+    width: 80vh;
     height: 100vw;
-    transform: rotate(-90deg) translateX(-100vh);
+    transform: rotate(-90deg) translateX(-84vh);
     transform-origin: top left;
     overflow-y: scroll;
     overflow-x: hidden;
     position: absolute;
     -ms-overflow-style: none;
-    
 }
 
 .outer-wrapper::-webkit-scrollbar {
@@ -30,7 +87,7 @@
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 350vw;
+    width: 270vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
     
@@ -38,10 +95,10 @@
 }
 
 .card {
-    width: 60vw;
-    height: 60vh;
-    margin: 20vh 0 0 10vw;
-
+    width: 30vw;
+    height: 50vh;
+    margin: 15vw 0 0 10vw;
+    box-shadow: 5px 5px 150px -18px rgba(0,0,0, .8);
 }
 
 .card:first-of-type {
@@ -57,7 +114,7 @@
     }
 
     .mainframe {
-        background-color: red;
+        
         height: 100vh;
         width: 100vw;
         overflow-y: scroll;
