@@ -67,6 +67,8 @@ body {
 
 }
 
+.RedPeriod { color: rgb(255, 62, 85);}
+.typedList { color: rgb(255, 62, 85);}
 
 .outer-wrapper {
  
@@ -80,9 +82,7 @@ body {
     -ms-overflow-style: none;
 }
 
-.outer-wrapper::-webkit-scrollbar {
-    display: none;
-}
+.outer-wrapper::-webkit-scrollbar { display: none;}
 
 .wrapper {
     display: flex;
