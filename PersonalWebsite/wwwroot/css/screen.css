@@ -1,0 +1,392 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../Ruby27-x64/lib/ruby/gems/2.7.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 11, ../../sass/screen.scss */
+.playingcard {
+  width: 350px;
+  height: 490px;
+  background: #CCC5B3;
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+  -moz-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  color: white;
+  -moz-animation: fadeInCard 0.6s forwards;
+  -webkit-animation: fadeInCard 0.6s forwards;
+  animation: fadeInCard 0.6s forwards;
+  font-family: Josefin Sans;
+  font-weight: 100;
+  letter-spacing: -1px;
+}
+/* line 24, ../../sass/screen.scss */
+.playingcard:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: -50px;
+  background: #0C0B13;
+  border-left: solid 250px #664C4F;
+  -moz-animation: fadeInDark 0.8s forwards;
+  -webkit-animation: fadeInDark 0.8s forwards;
+  animation: fadeInDark 0.8s forwards;
+}
+/* line 36, ../../sass/screen.scss */
+.playingcard:after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  bottom: -50px;
+  left: 50px;
+  right: 50px;
+  background: rgba(225, 98, 63, 0.7);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -moz-animation: fadeInRed 0.7s 0.5s forwards;
+  -webkit-animation: fadeInRed 0.7s 0.5s forwards;
+  animation: fadeInRed 0.7s 0.5s forwards;
+}
+/* line 48, ../../sass/screen.scss */
+.playingcard .content {
+  z-index: 10;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  -moz-animation: fadeInText 1.2s 0.1s forwards;
+  -webkit-animation: fadeInText 1.2s 0.1s forwards;
+  animation: fadeInText 1.2s 0.1s forwards;
+}
+/* line 57, ../../sass/screen.scss */
+.playingcard .content h1 {
+  font-size: 60px;
+  line-height: 40px;
+  margin: 0;
+}
+/* line 63, ../../sass/screen.scss */
+.playingcard .content h2 {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+}
+/* line 68, ../../sass/screen.scss */
+.playingcard .content h2 sup {
+  font-size: 14px;
+}
+/* line 75, ../../sass/screen.scss */
+.playingcard .mark:last-of-type {
+  opacity: 0;
+  background-color: #0C0B13;
+  background-color: rgba(12, 11, 19, 0.5);
+}
+/* line 82, ../../sass/screen.scss */
+.playingcard .mark {
+  position: absolute;
+  font-size: 60px;
+  font-weight: bold;
+  top: 16px;
+  left: 24px;
+  background-color: #CCC5B3;
+  -moz-animation: fadeInMark 0.8s 0.5s forwards;
+  -webkit-animation: fadeInMark 0.8s 0.5s forwards;
+  animation: fadeInMark 0.8s 0.5s forwards;
+}
+/* line 91, ../../sass/screen.scss */
+.playingcard .mark:after {
+  content: "\2660";
+  font-family: "Ionicons";
+  display: block;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  font-size: 40px;
+  color: #E1623F;
+  margin-left: -5px;
+  margin-top: 4px;
+}
+/* line 106, ../../sass/screen.scss */
+.playingcard .mark.upside-down {
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  transform: rotate(180deg);
+  top: auto;
+  left: auto;
+  bottom: 7.5px;
+  right: 24px;
+  color: #E1623F;
+}
+/* line 114, ../../sass/screen.scss */
+.playingcard .mark.upside-down:after {
+  color: #CCC5B3;
+}
+
+/* line 123, ../../sass/screen.scss */
+.dark {
+  color: #0C0B13;
+  margin-left: 20px;
+}
+
+@-moz-keyframes fadeInCard {
+  from {
+    top: 40px;
+    -moz-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+  }
+  to {
+    top: 0px;
+    -moz-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+@-webkit-keyframes fadeInCard {
+  from {
+    top: 40px;
+    -webkit-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+  }
+  to {
+    top: 0px;
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+@keyframes fadeInCard {
+  from {
+    top: 40px;
+    -moz-transform: scale(1.2) rotate(10deg);
+    -ms-transform: scale(1.2) rotate(10deg);
+    -webkit-transform: scale(1.2) rotate(10deg);
+    transform: scale(1.2) rotate(10deg);
+  }
+  to {
+    top: 0px;
+    -moz-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -webkit-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+  }
+}
+@-moz-keyframes fadeInDark {
+  from {
+    opacity: 0;
+    -moz-transform: rotate(72deg) translate(120px, 800px);
+    transform: rotate(72deg) translate(120px, 800px);
+  }
+  30% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    -moz-transform: rotate(72deg) translate(75px, 20px);
+    transform: rotate(72deg) translate(75px, 20px);
+  }
+}
+@-webkit-keyframes fadeInDark {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(72deg) translate(120px, 800px);
+    transform: rotate(72deg) translate(120px, 800px);
+  }
+  30% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(72deg) translate(75px, 20px);
+    transform: rotate(72deg) translate(75px, 20px);
+  }
+}
+@keyframes fadeInDark {
+  from {
+    opacity: 0;
+    -moz-transform: rotate(72deg) translate(120px, 800px);
+    -ms-transform: rotate(72deg) translate(120px, 800px);
+    -webkit-transform: rotate(72deg) translate(120px, 800px);
+    transform: rotate(72deg) translate(120px, 800px);
+  }
+  30% {
+    opacity: 0.1;
+  }
+  to {
+    opacity: 1;
+    -moz-transform: rotate(72deg) translate(75px, 20px);
+    -ms-transform: rotate(72deg) translate(75px, 20px);
+    -webkit-transform: rotate(72deg) translate(75px, 20px);
+    transform: rotate(72deg) translate(75px, 20px);
+  }
+}
+@-moz-keyframes fadeInRed {
+  from {
+    opacity: 0;
+    -moz-transform: rotate(70deg) translate(7px, 800px);
+    transform: rotate(70deg) translate(7px, 800px);
+  }
+  30% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+    -moz-transform: rotate(58deg) translate(0px, 0px);
+    transform: rotate(58deg) translate(0px, 0px);
+  }
+}
+@-webkit-keyframes fadeInRed {
+  from {
+    opacity: 0;
+    -webkit-transform: rotate(70deg) translate(7px, 800px);
+    transform: rotate(70deg) translate(7px, 800px);
+  }
+  30% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: rotate(58deg) translate(0px, 0px);
+    transform: rotate(58deg) translate(0px, 0px);
+  }
+}
+@keyframes fadeInRed {
+  from {
+    opacity: 0;
+    -moz-transform: rotate(70deg) translate(7px, 800px);
+    -ms-transform: rotate(70deg) translate(7px, 800px);
+    -webkit-transform: rotate(70deg) translate(7px, 800px);
+    transform: rotate(70deg) translate(7px, 800px);
+  }
+  30% {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+    -moz-transform: rotate(58deg) translate(0px, 0px);
+    -ms-transform: rotate(58deg) translate(0px, 0px);
+    -webkit-transform: rotate(58deg) translate(0px, 0px);
+    transform: rotate(58deg) translate(0px, 0px);
+  }
+}
+@-moz-keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+  }
+  to {
+    top: 50%;
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeInMark {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeInMark {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInMark {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
