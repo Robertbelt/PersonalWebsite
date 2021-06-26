@@ -1,10 +1,10 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-
 @font-face {
     font-family: 'Sofia Pro Regular';
     src: url('wwwroot\css\Fonts\Sofia Pro Regular.ttf') format('truetype');
 }
+
 @font-face {
     font-family: 'Anson-Regular';
     src: url('/wwwroot\css\Fonts\Anson-Regular.otf') format('opentype');
@@ -19,10 +19,9 @@ body {
     height: 100vh;
     width: 100vw;
     border-right: 40vw solid rgba(255, 255, 255, .02);
-   -webkit-background-clip: padding-box;
+    -webkit-background-clip: padding-box;
     background-clip: padding-box;
 }
-
 
 .NameDiv {
     width: 10vw;
@@ -30,9 +29,6 @@ body {
     margin-left: 3vw;
     margin: 8vh 0 0 4vw;
 }
-
-
-
 
 .name {
     font-family: 'Inconsolata', monospace;
@@ -57,21 +53,24 @@ body {
     transform: translateX(20vh) translateY(15vh);
 }
 
-.IntroDiv h2 {
-    color: #F7F6F5;
-    font-size: 5rem;
-    font-family: 'Anson-Regular';
-    font-weight: 800;
-    letter-spacing: .2rem;
-    -webkit-font-smoothing: antialiased;
+    .IntroDiv h2 {
+        color: #F7F6F5;
+        font-size: 5rem;
+        font-family: 'Anson-Regular';
+        font-weight: 800;
+        letter-spacing: .2rem;
+        -webkit-font-smoothing: antialiased;
+    }
 
+.RedPeriod {
+    color: rgb(255, 62, 85);
 }
 
-.RedPeriod { color: rgb(255, 62, 85);}
-.typedList { color: rgb(255, 62, 85);}
+.typedList {
+    color: rgb(255, 62, 85);
+}
 
 .outer-wrapper {
- 
     width: 80vh;
     height: 100vw;
     transform: rotate(-90deg) translateX(-84vh);
@@ -82,12 +81,14 @@ body {
     -ms-overflow-style: none;
 }
 
-.outer-wrapper::-webkit-scrollbar { display: none;}
+    .outer-wrapper::-webkit-scrollbar {
+        display: none;
+    }
 
 .wrapper {
     display: flex;
     flex-direction: row;
-    width: 250vw;
+    width: 249vw;
     transform: rotate(90deg) translateY(-100vh);
     transform-origin: top left;
 }
@@ -99,20 +100,21 @@ body {
     box-shadow: 5px 5px 150px -18px rgba(0,0,0, .8);
 }
 
-.card:first-of-type {
-    margin-left: 80vw;
-}
+    .card:first-of-type {
+        box-shadow: 5px 5px 150px -18px rgba(0,0,0, .8);
+        margin-left: 90vw;
+    }
 
 @media(max-width: 767px) {
     .reset-this {
         all: revert;
     }
+
     body {
         width: 100vw;
     }
 
     .mainframe {
-        
         height: 100vh;
         width: 100vw;
         overflow-y: scroll;
@@ -123,10 +125,10 @@ body {
         width: 100vw;
         height: 100vh;
     }
+
     .wrapper {
         display: flex;
         flex-direction: column;
-        background-color: green;
         width: 80vw;
         margin: 0 10vw 0 10vw;
         align-items: center;
@@ -139,43 +141,58 @@ body {
         width: 100%;
     }
 
-    .card:first-of-type {
-        margin: 24vh 0 .5vh 0;
+        .card:first-of-type {
+            margin: 24vh 0 .5vh 0;
+        }
+
+        .card:last-of-type {
+            height: 33%;
+        }
+    .NameDiv {
+        width: 10vw;
+        height: 8vh;
+        margin-left: 3vw;
+        margin: 4vh 0 0 4vw;
     }
 
-    .card:last-of-type {
-        height: 33%;
+
+    .name {
+        font-family: 'Inconsolata', monospace;
+        -webkit-font-smoothing: antialiased;
+        color: #F7F6F5;
+        text-transform: uppercase;
+        letter-spacing: .5rem;
+        line-height: 28.6px;
+        font-size: 1.2rem;
+        word-spacing: 0;
+        padding: 0;
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none solid rgb(247, 246, 245);
+        text-align: start;
+        text-indent: 0;
     }
+
+    .IntroDiv {
+        position: absolute;
+        height: 40%;
+        transform: translateX(2vh) translateY(10vh);
+    }
+
+        .IntroDiv h2 {
+            color: #F7F6F5;
+            font-size: 1.7rem;
+            font-family: 'Anson-Regular';
+            font-weight: 800;
+            letter-spacing: .2rem;
+            -webkit-font-smoothing: antialiased;
+        }
 }
 
-@media(max-height: 600px) {
+
+@media(max-height: 824px) {
     .outer-wrapper {
         display: flex;
-        background-color: black;
-        justify-content: center;
-    }
-    .wrapper {
-        margin: 0 2vw 0 2vw;
-        height: 187vh;
-        width: 90%;
-    }
-    .card {
-        height: 30vh;
-    }
-
-    .card:first-of-type {
-        margin: 35vh 0 .5vh 0;
-    }
-
-    .card:last-of-type {
-        height: 29%;
-    }
-}
-
-@media(max-height: 824px){
-    .outer-wrapper {
-        display: flex;
-        background-color: black;
         justify-content: center;
     }
 
@@ -187,13 +204,14 @@ body {
 
     .card {
         height: 29vh;
-        margin-bottom: 1vh;
+        margin-bottom: 3vh;
     }
 
     .card:first-of-type {
-        margin: 34vh 0 1vh 0;
+        margin: 34vh 0 3vh 0;
+        width: 70vw;
     }
-
+    
     .card:last-of-type {
         height: 29%;
     }

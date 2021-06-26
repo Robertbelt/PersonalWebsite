@@ -74,8 +74,7 @@
 
     .mark:last-of-type {
         opacity: 0;
-        background-color: #0C0B13;
-        background-color: rgba( 12, 11, 19,.5 );
+        background-color: transparent;
     }
 
 
@@ -85,7 +84,7 @@
         font-weight: bold;
         top: 16px;
         left: 24px;
-        background-color: #CCC5B3;
+        background-color: transparent;
         @include animation(fadeInMark .8s .5s forwards);
 
         &:after {
@@ -117,7 +116,6 @@
         }
     }
 }
-
 
 
 .dark {
